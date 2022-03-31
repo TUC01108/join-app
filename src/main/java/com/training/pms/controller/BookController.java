@@ -18,7 +18,8 @@ public class BookController {
 
 	@Autowired
 	private BookService bookService;
-
+	
+	// save book
 	@RequestMapping(value = "/savebook", method = RequestMethod.POST)
 	@ResponseBody
 	public Book saveBook(@RequestBody Book book) {
